@@ -1,0 +1,29 @@
+/* The align-self property allows you to adjust an item individually instead of having to adjust them all at once
+The align-self uses the same values as align-Items
+(flex-start, flex-end, center, stretch, baseline)
+*/
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
