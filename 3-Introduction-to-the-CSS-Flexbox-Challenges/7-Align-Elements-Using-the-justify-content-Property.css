@@ -1,0 +1,29 @@
+/* I learned about justify-content: property and how it has several options to align and space out the flex items in a certain way
+Options include center, flex-start, flex-end, space-between, space around
+Each one justifies the flex items either row or column in the specified content justification
+*/
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>

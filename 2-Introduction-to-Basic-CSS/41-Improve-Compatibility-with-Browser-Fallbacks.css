@@ -1,0 +1,17 @@
+/* I learned that if you do want to provide a browser fallback, it's as easy as providing another more widely supported value immediately before your declaration. That way an older browser will have something to fall back on, while a newer browser will just interpret whatever declaration comes later in the cascade.
+
+*/
+
+
+<style>
+  :root {
+    --red-color: red;
+  }
+ .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>

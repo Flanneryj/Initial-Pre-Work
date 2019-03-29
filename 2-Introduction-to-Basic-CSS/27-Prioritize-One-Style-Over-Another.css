@@ -1,0 +1,14 @@
+/* Learned that sometimes your HTML elements will receive multiple styles that conflict with one another. So you have to prioritze one style over the other literally */
+
+<style>
+  .pink-text {
+    color: pink;
+  }
+
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+</style>
+<h1 class="pink-text" >Hello World!</h1>
